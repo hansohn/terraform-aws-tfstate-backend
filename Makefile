@@ -14,7 +14,7 @@ include $(PROJECT_PATH)/Makefile.*
 # docker
 #-------------------------------------------------------------------------------
 
-DOCKER_IMAGE ?= hansohn/terraform
+DOCKER_IMAGE ?= hansohn/terraform-aws
 DOCKER_TAG ?= latest
 ENTRYPOINT ?= bash
 
