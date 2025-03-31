@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,visualstudiocode,terraform,terragrunt
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,visualstudiocode,terraform,terragrunt
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,vim,visualstudiocode,terraform
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,vim,visualstudiocode,terraform
 
 ### Linux ###
 *~
@@ -52,6 +52,7 @@ Temporary Items
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
+**/configs/*
 
 # .tfstate files
 *.tfstate
@@ -85,13 +86,25 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-### Terragrunt ###
-# terragrunt cache directories
-**/.terragrunt-cache/*
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
 
-# Terragrunt debug output file (when using `--terragrunt-debug` option)
-# See: https://terragrunt.gruntwork.io/docs/reference/cli-options/#terragrunt-debug
-terragrunt-debug.tfvars.json
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 ### VisualStudioCode ###
 .vscode/*
@@ -112,7 +125,4 @@ terragrunt-debug.tfvars.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,macos,visualstudiocode,terraform,terragrunt
-
-.terraform.lock.hcl
-**/.terraform.lock.hcl
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,vim,visualstudiocode,terraform
